@@ -48,3 +48,15 @@ The dashboard works on all modern browsers that support:
 - CSS Grid
 - Fetch API
 - Geolocation API
+
+![img1](https://github.com/user-attachments/assets/a74a6dff-fc0d-451f-8cc1-35c95d8326f2)
+
+![img2](https://github.com/user-attachments/assets/0e1364c4-db77-4b65-a532-578af3d76e1b)
+
+![img3](https://github.com/user-attachments/assets/059fb7bc-e442-4f1c-8882-b384a97c1ce2)
+
+![img4](https://github.com/user-attachments/assets/c6e2dd23-8033-4c9a-a6cb-de668d37bdd3)
+
+![img5](https://github.com/user-attachments/assets/ba99aa09-7a29-4893-b6f6-6d436645426a)
+
+![img6](https://github.com/user-attachments/assets/6589dd29-372a-416e-9159-d9a8d23c918b)
