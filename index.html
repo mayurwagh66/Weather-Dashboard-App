@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body data-theme="light">
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Weather Dashboard</h1>
+                <button id="theme-toggle" class="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                    <span>Dark Mode</span>
+                </button>
+            </div>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </header>
+
+        <main>
+            <div class="weather-info">
+                <div class="current-weather">
+                    <h2 id="city-name">--</h2>
+                    <div class="temperature">
+                        <span id="temperature">--</span>°C
+                    </div>
+                    <div class="weather-description" id="weather-description">--</div>
+                    <div class="current-date" id="current-date">--</div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail-card">
+                        <i class="fas fa-tint"></i>
+                        <div class="detail-info">
+                            <span>Humidity</span>
+                            <span id="humidity">--%</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-wind"></i>
+                        <div class="detail-info">
+                            <span>Wind Speed</span>
+                            <span id="wind-speed">-- m/s</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-compress-alt"></i>
+                        <div class="detail-info">
+                            <span>Pressure</span>
+                            <span id="pressure">-- hPa</span>
+                        </div>
+                    </div>
+                    <div class="detail-card">
+                        <i class="fas fa-eye"></i>
+                        <div class="detail-info">
+                            <span>Visibility</span>
+                            <span id="visibility">-- km</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sun-info">
+                    <div class="sun-card">
+                        <i class="fas fa-sun"></i>
+                        <div class="sun-detail">
+                            <span>Sunrise</span>
+                            <span id="sunrise">--:--</span>
+                        </div>
+                    </div>
+                    <div class="sun-card">
+                        <i class="fas fa-moon"></i>
+                        <div class="sun-detail">
+                            <span>Sunset</span>
+                            <span id="sunset">--:--</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forecast-section">
+                <div class="forecast-toggle">
+                    <button id="five-day-btn" class="forecast-tab active">5-Day Forecast</button>
+                    <button id="hourly-btn" class="forecast-tab">Hourly Forecast</button>
+                </div>
+                <div id="five-day-forecast">
+                    <h3>5-Day Forecast</h3>
+                    <div class="forecast-container" id="forecast-container">
+                        <!-- Forecast cards will be added here dynamically -->
+                    </div>
+                </div>
+                <div id="hourly-forecast" style="display:none;">
+                    <h3>Hourly Forecast</h3>
+                    <div class="hourly-day-filter" id="hourly-day-filter">
+                        <!-- Day filter buttons will be added here dynamically -->
+                    </div>
+                    <div class="forecast-container" id="hourly-forecast-container">
+                        <!-- Hourly forecast cards will be added here dynamically -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html> 
